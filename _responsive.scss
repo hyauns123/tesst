@@ -1,0 +1,101 @@
+/* CSS Document */
+
+@media screen and (min-width: 1201px){
+    .hide-on-desktop-lg{ display: none !important; }
+}
+
+@media screen and (max-width: 1450px){
+    .grid-container{ max-width: 1100px; }
+    div.articles .continue-reading svg{ display: none; }
+    #header.minimalist .epcl-social-buttons{
+        display: none;
+    }
+}
+
+/* Small Desktops */
+
+@media screen and (min-width: 981px) and (max-width: 1200px){
+
+    .hide-on-desktop-sm{ display: none !important; }
+	body{ min-width: inherit; font-size: 14px; }
+	img{ max-width: 100%; height: auto; }
+    .grid-container{ padding-left: 40px; padding-right: 40px; }
+    .title{ font-size: 20px; }
+
+    #header{
+        .logo{
+            .title{
+                font-size: 50px;
+            }
+        }
+    }
+
+    #page div.left-content{
+        padding-left: 20px;
+    }
+    #single div.left-content{
+        padding-left: 20px;
+    }
+    div.articles{
+
+        &.classic{
+            article{
+                .info{
+                    padding-left: 30px;
+                }
+            }
+        }
+        &.grid-posts{
+            article{
+                width: 50%;
+                .main-title{
+                    font-size: 17px;
+                }
+                .featured-image .thumb{
+                    height: 300px;
+                }
+            }
+            .epcl-bg{
+                margin: 0 10px;
+            }
+           
+        }
+    }
+
+    .grid-sidebar div.left-content{
+        padding-right: 10px !important;
+    }
+
+    .classic-sidebar div.left-content, .grid-sidebar div.left-content{
+        padding-right: 40px;
+    }    
+    
+    #footer{
+        border-bottom: 0;
+        .widgets{
+            padding: 0 20px;
+            .epcl-row{
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .widget{
+                padding-bottom: 25px;
+                width: 50%;
+                margin: 0 0 40px;
+            }
+        }
+    }
+
+}
+
+/* All Mobile Devices */
+
+@import "responsive/all-mobile";
+
+/* Tablets */
+
+@import "responsive/tablet";
+
+/* SmartPhones and small tablets */
+
+@import "responsive/mobile";
